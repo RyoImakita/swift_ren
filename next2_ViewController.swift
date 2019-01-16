@@ -23,7 +23,7 @@ class next2_ViewController: UIViewController {
     @IBAction func push_back(_ sender: Any) {
     
         let storyboard: UIStoryboard = self.storyboard!;
-        let view = storyboard.instantiateViewController(withIdentifier: "navi_view");
+        var view = storyboard.instantiateViewController(withIdentifier: "navi_view");
         self.present(view, animated: true, completion: nil);
     }
 }
